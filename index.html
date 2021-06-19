@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Holiday</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <section class="banner">
+    <div class="container">
+      <div id="scene">
+        <h2 id="text">
+          <span data-depth-y="1">H</span>
+          <span data-depth-y="-3">o</span>
+          <span data-depth-y="2.5">l</span>
+          <span data-depth-y="-4">i</span>
+          <span data-depth-y="-1.5">d</span>
+          <span data-depth-y="1">a</span>
+          <span data-depth-y="-0.5">y</span>
+        </h2>
+        <div class="layer top" data-depth="-0.25">
+          <img src="./assets/img1.svg" alt="background">
+        </div>
+        <div class="layer" data-depth="-1">
+          <img src="./assets/img2.svg" alt="background">
+        </div>
+        <div class="layer" data-depth=".625">
+          <img src="./assets/img3.svg" alt="background">
+        </div>
+        <div class="layer" data-depth=".25">
+          <img src="./assets/img4.svg" alt="background">
+        </div>
+        <div class="layer top" data-depth="-.35">
+          <img src="./assets/img5.svg" alt="background">
+        </div>
+        <div class="layer top" data-depth=".5">
+          <img src="./assets/img6.svg" alt="background">
+        </div>
+        <div class="layer top" data-depth=".35">
+          <img src="./assets/img7.svg" alt="background">
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script>
+    var text = document.getElementById('text');
+    var parallaxInstance = new Parallax(text);
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
+  </script>
+</body>
+</html>
